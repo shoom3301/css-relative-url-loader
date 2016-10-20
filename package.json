@@ -14,7 +14,6 @@
   },
   "homepage": "https://github.com/shoom3301/css-relative-url-loader#readme",
   "dependencies": {
-    "loader-utils": "0.2.16",
-    "path": "^0.12.7"
+    "loader-utils": "0.2.16"
   }
 }
