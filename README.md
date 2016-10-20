@@ -35,4 +35,5 @@ components
 ```
  
 `background: url('./../assets/my-image.jpg');`
+
 will be replace with -> `background: url('components/my-component/assets/my-image.jpg');`
