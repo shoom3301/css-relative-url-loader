@@ -1,0 +1,19 @@
+{
+  "name": "css-relative-url-loader",
+  "version": "1.0.0",
+  "description": "Loader for webpack, replace relative paths in css with root",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shoom3301/css-relative-url-loader.git"
+  },
+  "author": "Alexandr Kazachenko <shoom3301@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shoom3301/css-relative-url-loader/issues"
+  },
+  "homepage": "https://github.com/shoom3301/css-relative-url-loader#readme",
+  "dependencies": {
+    "loader-utils": "0.2.16"
+  }
+}
