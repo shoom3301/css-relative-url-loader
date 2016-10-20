@@ -2,6 +2,7 @@ const path = require('path');
 const loaderUtils = require('loader-utils');
 
 module.exports = function (content) {
+    this.cacheable();
     const query = loaderUtils.parseQuery(this.query);
 
     if (!query.root) {
