@@ -4,6 +4,7 @@ const loaderUtils = require('loader-utils');
 module.exports = function (content) {
     this.cacheable();
     const query = loaderUtils.parseQuery(this.query);
+    const prefix = query.prefix || '';
 
     if (!query.root) {
         throw new Error('shm-loader: root parameter is required!');
@@ -11,6 +12,6 @@ module.exports = function (content) {
     const relative = this.context.replace(query.root, '').substring(1);
 
     return content.replace(/url\([\'\"]?([^'"]+)[\'\"]?\)/g,
-        (str, filePath) => `url('${path.join(relative, filePath)}')`
+        (str, filePath) => `url('${prefix + path.join(relative, filePath)}')`
     );
 };
