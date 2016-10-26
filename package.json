@@ -1,6 +1,6 @@
 {
   "name": "css-relative-url-loader",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Loader for webpack, replace relative paths in css with root",
   "main": "index.js",
   "repository": {
