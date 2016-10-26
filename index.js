@@ -12,6 +12,6 @@ module.exports = function (content) {
     const relative = this.context.replace(query.root, '').substring(1);
 
     return content.replace(/url\([\'\"]?([^'"]+)[\'\"]?\)/g,
-        (str, filePath) => `url('${prefix + path.join(relative, filePath)}')`
+        (str, filePath) => `url('${prefix + path.join(relative, filePath)}')`.replace(/\\/g, '/')
     );
 };
